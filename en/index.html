@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wireframe Guess</title>
+  	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="customize.js"></script>
+	<style>
+	*{margin:0;padding:0;}
+	div.header{
+		width:100%;
+		height:50px;
+		background-color: #3e3e3e;
+		color: white;
+		position: fixed;
+		z-index: 200;
+	}
+	div.logo{
+		font:bold 26px/50px Tahoma;
+		padding-left: 20px;
+	}
+	div.tagline{
+		position: absolute;
+		top: 0px;
+		right: 20px;
+		font:italic 16px/50px Tahoma;
+	}
+	div.main{width:1050px;padding-top: 60px;position: relative;}
+	.center{margin:0 auto 0 auto;display: block;}
+	.button{width:210px;height: 50px;border:1px solid #1a88cf;text-align: center;font:bold 25px/50px Tahoma;color: white;background: #1c91f9;cursor: pointer;}
+	input.guess{width:75%;height:50px;float: left;color: #898989;font:normal 15px/50px Tahoma;}
+	div.check{float: right;}
+	div.buttons{width: 100%;height: 60px;}
+	div.hint{display:none;width:100%;height: 80px;}
+	div.viewbox{width:100%}
+	div.sitescreen{display: none;}
+	h2.success{color:#f9981e; font:bold 20px/80px Tahoma;text-align: center;}
+	h2.fail{color:#f61413;font:bold 20px/80px Tahoma;text-align: center;}
+	div.viewbox{position: relative;}
+	div.wireframe,div.sitescreen{position: absolute;top:0px;}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">Wireframe Guess</div>
+		<div class="tagline">Can we recognize the wireframe of some sites we surf everyday (Worldwide)?!</div>
+	</div>
+	<div class="main center">
+		<div class="buttons">
+			<div class="guesspart">
+				<input type="text" class="guess" value="Guess this wireframe belong to which site? Use xxx.xxx.com or xxx.com">
+				<div class="check button">Am I Right?</div>
+			</div>
+			<!-- <div class="nav">
+				<div class="prev button"></div>
+				<div class="next button"></div>
+			</div> -->
+		</div>
+		<div class="hint">
+		</div>
+		<div class="viewbox">
+			<div class="wireframe" data-id="0">
+				<img src="images/0.png" alt="wireframe png" id="wf">
+			</div>
+			<div class="sitescreen">
+				<img src="images/0-o.png" alt="real site png" id="sc">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
