@@ -8,7 +8,7 @@ $(document).ready(function(){
 		4:["bing.com","www.bing.com"],
 		5:["tumblr.com","www.tumblr.com"],
 		6:["github.com","www.github.com"],
-		6:["stackoverflow.com","www.stackoverflow.com"]
+		7:["stackoverflow.com","www.stackoverflow.com"]
 	};
 	function GoNext(){
 		var wid = parseInt($('div.wireframe').attr('data-id'));
